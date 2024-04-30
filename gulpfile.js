@@ -129,3 +129,5 @@ exports.pages = pages;
 
 exports.build = series(cleanDist, building);//для итогового результата: gulp build
 exports.default = parallel(styles, images, scripts, pages, watching); // start work: gulp
+
+/* "gulp-sass": "^5.1.0",*/

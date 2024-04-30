@@ -6,6 +6,19 @@ body{
     font-size: 16px;
     line-height: 27px;
     font-weight: 400;
+    color: $default;
+    // 1:15:00
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
 }
 .container{
     max-width: 1140px;
