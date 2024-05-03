@@ -1,3 +1,5 @@
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
 html, body{
     height: 100%;
 }
@@ -25,4 +27,26 @@ main{
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        margin: 0 15px;
+    }
+    button{
+        background-color: $title;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        width: 8px;
+        height: 8px;
+        font-size: 0;
+    }
+    li.slick-active{
+        button{
+            background: #ffef35;
+        }
+    }
 }
