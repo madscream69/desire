@@ -7,7 +7,8 @@ body{
     line-height: 27px;
     font-weight: 400;
     color: $default;
-    // 1:15:00
+    overflow-x: hidden;
+    min-width: 320px;
 }
 .wrapper{
     display: flex;
