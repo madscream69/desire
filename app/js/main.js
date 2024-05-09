@@ -11,6 +11,11 @@ $(function () {
         fade: true,
         autoplay: true
     });
+    var mixer = mixitup('.gallery__inner', {
+        load:{
+            filter: ".living"
+        }
+    });
 })
 // 'use strict'
 // let burger = document.querySelector('.header__btn'),
