@@ -19,32 +19,33 @@ $(function () {
 })
 console.log(window.location.href);
 // this consruction for the active class to headers elements
-if ((window.location.href).includes('about')) {
-    const about = document.querySelectorAll('.menu__list-link');
-    console.log(about);
-    for (let i = 0; i < about.length; i++) {
-        if (about[i].innerHTML.includes('About')) {
-            console.log('yes');
-            about[i].classList.add('menu__list-link--active');
-            break
-        }
-        else if(about[i].innerHTML.includes('Gallery')){
-            about[i].classList.add('menu__list-link--active');
-            break
-        }
-        else if(about[i].innerHTML.includes('Blog')){
-            about[i].classList.add('menu__list-link--active');
-            break
-        }
-        else if(about[i].innerHTML.includes('Contact')){
-            about[i].classList.add('menu__list-link--active');
-            break
-        }
-        else{
-            about[i].classList.remove('menu__list-link--active');
-        }
+
+const link_list = document.querySelectorAll('.menu__list-link');
+console.log(link_list);
+for (let i = 0; i < link_list.length; i++) {
+    if (link_list[i].innerHTML.includes('About') && (window.location.href).includes('about')) {
+        console.log('yes');
+        link_list[i].classList.add('menu__list-link--active');
+        break
+    }
+    else if(link_list[i].innerHTML.includes('Gallery') && (window.location.href).includes('gallery')){
+        link_list[i].classList.add('menu__list-link--active');
+        break
+    }
+    else if(link_list[i].innerHTML.includes('Blog') && (window.location.href).includes('blog')){
+        link_list[i].classList.add('menu__list-link--active');
+        break
+    }
+    else if(link_list[i].innerHTML.includes('Contact') && (window.location.href).includes('contact')){
+        link_list[i].classList.add('menu__list-link--active');
+        break
+    }
+    else{
+        link_list[i].classList.remove('menu__list-link--active');
     }
 }
+
+
 // 'use strict'
 // let burger = document.querySelector('.header__btn'),
 //     rightside_menu = document.querySelector('.rightside-menu'),
