@@ -2,4 +2,47 @@
     margin-top: -53px;
     margin-bottom: 50px;
 }
-// 7:48:20
+.contact{
+    padding-bottom: 100px;
+    &__title{
+        color: $title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            height: 2px;
+            background: #6d7278;
+        }
+    }
+    .contact__social{
+        padding-left: 284px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__social-item+ .contact__social-item{
+        padding-left: 40px;
+    }
+    &__phone{
+        color: $default;
+    }
+    &__text{
+        margin-bottom: 10px;
+    }
+    &__box{
+        padding-left: 284px;
+    }
+    &__city{
+        margin-bottom: 16px;
+    }
+    &__form{
+        padding-left: 284px;
+    }
+}
