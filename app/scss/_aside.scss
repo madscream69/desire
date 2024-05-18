@@ -1,0 +1,31 @@
+.aside{
+    width: 350px;
+    margin-left: 30px;
+    &__search{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__search-input{
+        padding: 6px 43px 6px 18px;
+        border: 1px solid rgba($color: $title, $alpha: .7);
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            line-height: 27px;
+            font-weight: 400;
+            color: #a1a1a1;
+        }
+    }
+    &__search-btn{
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 10px;
+        right: 13px;
+        cursor: pointer;
+    }
+}
+// 9:12:00
