@@ -19,6 +19,14 @@ $(function () {
         slidesToShow: 10,
         slidesToScroll: 10
     });
+    $('.article-slider__box').slick({
+        prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow--left"><img src="images/icons/arrow-slide-left.svg" alt="img"></button>',
+        nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow--right"><img src="images/icons/arrow-slide-right.svg" alt="img"></button>',
+        arrows: true,
+        autoplay: true,
+        fade: true,
+    });
+    
     var mixer = mixitup('.gallery__inner', {
         load:{
             filter: ".living"
